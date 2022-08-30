@@ -49,7 +49,7 @@ function App() {
                     <a href="https://www.buymeacoffee.com/munjitso" target="blank">
                         <button className="donate">Donate</button>
                     </a>
-                    <button className="clear" onClick={() => textarea.value = ''}>Clear</button>
+                    <button className="clear" onClick={() => {textarea.value = ''; setInputText("")}}>Clear</button>
                 </div>
             </div>
         </>
