@@ -44,9 +44,11 @@ function App() {
                     </div>
                 </div>
                 <div className="footer">
-
-                <button className="button" onClick={() => copyToClipboard(finalInput, setText)}>{text}</button>
-                    <a href="https://www.buymeacoffee.com/munjitso" target="blank"><button className="donate">Donate</button></a>
+                    <button className="copy" onClick={() => copyToClipboard(finalInput, setText)}>{text}</button>
+                    <a href="https://www.buymeacoffee.com/munjitso" target="blank">
+                        <button className="donate">Donate</button>
+                    </a>
+                    <button className="clear" onClick={() => copyToClipboard(finalInput, setText)}>Clear</button>
                 </div>
             </div>
         </>
