@@ -48,7 +48,7 @@ function App() {
                     <a href="https://www.buymeacoffee.com/munjitso" target="blank">
                         <button className="donate">Donate</button>
                     </a>
-                    <button className="clear" onClick={() => copyToClipboard(finalInput, setText)}>Clear</button>
+                    <button className="clear" onClick={() => setInputText("")}>Clear</button>
                 </div>
             </div>
         </>
