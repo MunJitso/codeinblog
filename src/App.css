@@ -39,6 +39,13 @@ html{
 .disclaimer{
     font-size: 0.7rem;
 }
+.icon{
+    /* small icon with transition */
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    transition: all 0.3s ease-in-out;
+}
 .code-container{
   background-color: #151718;
   padding: 30px 30px;
@@ -95,7 +102,7 @@ textarea {
   appearance: none;
   border: none;
 }
-.button{
+.button, .donate{
     display: inline-block;
     vertical-align: top;
     align-items: center;
@@ -110,4 +117,9 @@ textarea {
     cursor: pointer;
     justify-self: end;
     border-radius: 10px;
+}
+.donate{
+    color: #151718;
+    background-color: #fdbc2e;
+    padding: 10px 20px;
 }

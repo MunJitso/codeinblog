@@ -25,7 +25,7 @@ function App() {
         <>
             <div className="container">
                 <div className="header">
-                    <h1><img src="/public/favicon.png" alt="icon" className="icon"/> Code in Blog</h1>
+                    <h1>Code in Blog</h1>
                     <p>Make code snippets for your blog posts</p>
                     <p className="disclaimer">( still beta version )</p>
                 </div>
@@ -43,7 +43,11 @@ function App() {
                         </label>
                     </div>
                 </div>
+                <div className="footer">
+
                 <button className="button" onClick={() => copyToClipboard(finalInput, setText)}>{text}</button>
+                    <a href="https://www.buymeacoffee.com/munjitso" target="blank"><button className="donate">Donate</button></a>
+                </div>
             </div>
         </>
     );
