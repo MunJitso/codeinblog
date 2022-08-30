@@ -17,6 +17,7 @@ function copyToClipboard(text, setText) {
 }
 
 function App() {
+    const textarea = document.getElementById('textarea');
     const [text, setText] = useState("Copy To Clipboard");
     const [inputText, setInputText] = useState("")
     let finalInput = "<link rel='stylesheet' href='https://learnpid.me/cssStorage/App.css'/><div class=\"code-container\"><div class=\"buttons\"><div class=\"minimize\"></div><div class=\"fullscreen\"></div><div class=\"close\"></div></div><div class=\"input-field\"><pre><code class=\"input-block\">" + inputText + "</code></pre></div></div>";
@@ -38,7 +39,7 @@ function App() {
                     <div className="input-field">
                         <label className="">
                             <span></span>
-                            <textarea className="input-block" autoFocus
+                            <textarea id="textarea" className="input-block" autoFocus
                                       onChange={e => setInputText(e.target.value)}></textarea>
                         </label>
                     </div>
@@ -48,7 +49,7 @@ function App() {
                     <a href="https://www.buymeacoffee.com/munjitso" target="blank">
                         <button className="donate">Donate</button>
                     </a>
-                    <button className="clear" onClick={() => setInputText("")}>Clear</button>
+                    <button className="clear" onClick={() => textarea.value = ''}>Clear</button>
                 </div>
             </div>
         </>
