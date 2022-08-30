@@ -27,7 +27,7 @@ function App() {
                 <div className="header">
                     <h1>Code in Blog</h1>
                     <p>Make code snippets for your blog posts</p>
-                    <p className="disclaimer">( still beta version )</p>
+                    <p>( still beta version + the copy format is HTML )</p>
                 </div>
                 <div className="code-container">
                     <div className="buttons">
