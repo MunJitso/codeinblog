@@ -10,16 +10,13 @@ html{
   margin: 0;
   background-color: #1E232A;
 }
-body{
-  background-color: #1E232A;
-  height: 100vh;
-}
-.root{
-  color:white;
+.container{
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
   height: 100vh;
+  color:white;
+  align-items: center;
 }
 .code-container{
   background-color: #151718;
@@ -78,5 +75,19 @@ textarea {
   border: none;
 }
 .button{
-
+  /* in the left of the div */
+    display: inline-block;
+    vertical-align: top;
+    align-items: center;
+    background-color: #fd6158;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 1rem 2px;
+    cursor: pointer;
+    justify-self: end;
+    border-radius: 10px;
 }
