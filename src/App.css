@@ -18,6 +18,27 @@ html{
   color:white;
   align-items: center;
 }
+.header{
+    margin-bottom: 20px;
+}
+.header h1{
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.header p{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 0;
+}
+.disclaimer{
+    font-size: 0.7rem;
+}
 .code-container{
   background-color: #151718;
   padding: 30px 30px;
@@ -75,7 +96,6 @@ textarea {
   border: none;
 }
 .button{
-  /* in the left of the div */
     display: inline-block;
     vertical-align: top;
     align-items: center;
