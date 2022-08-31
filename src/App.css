@@ -40,7 +40,6 @@ html{
     font-size: 0.7rem;
 }
 .icon{
-    /* small icon with transition */
     width: 30px;
     height: 30px;
     margin-right: 10px;
@@ -131,7 +130,6 @@ textarea {
     border-radius: 10px;
 }
 .copy{
-    /* light green button */
     background-color: #28c940;
 }
 .donate{
