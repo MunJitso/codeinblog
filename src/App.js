@@ -4,7 +4,9 @@ import {useState} from "react";
 function sleep(s) {
     return new Promise(resolve => setTimeout(resolve, s * 1000));
 }
-
+function convert(text) {
+    return text.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
 function copyToClipboard(text, setText) {
     setText("Copied!");
     navigator.clipboard.writeText(text).then(() => {
@@ -20,7 +22,7 @@ function App() {
     const textarea = document.getElementById('textarea');
     const [text, setText] = useState("Copy To Clipboard");
     const [inputText, setInputText] = useState("")
-    let finalInput = "<link rel='stylesheet' href='https://learnpid.me/cssStorage/App.css'/><div class=\"code-container\"><div class=\"buttons\"><div class=\"minimize\"></div><div class=\"fullscreen\"></div><div class=\"close\"></div></div><div class=\"input-field\"><pre><code class=\"input-block\">" + inputText + "</code></pre></div></div>";
+    let finalInput = "<link rel='stylesheet' href='https://learnpid.me/cssStorage/App.css'/><div class=\"code-container\"><div class=\"buttons\"><div class=\"minimize\"></div><div class=\"fullscreen\"></div><div class=\"close\"></div></div><div class=\"input-field\"><pre><code class=\"input-block\">" + convert(inputText) + "</code></pre></div></div>";
 
     return (
         <>
