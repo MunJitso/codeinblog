@@ -22,7 +22,7 @@ function App() {
     const textarea = document.getElementById('textarea');
     const [text, setText] = useState("Copy To Clipboard");
     const [inputText, setInputText] = useState("")
-    let finalInput = "<link rel='stylesheet' href='https://learnpid.me/cssStorage/App.css'/><div class=\"code-container\"><div class=\"buttons\"><div class=\"minimize\"></div><div class=\"fullscreen\"></div><div class=\"close\"></div></div><div class=\"input-field\"><pre><code class=\"input-block\">" +
+    let finalInput = "<link rel='stylesheet' href='https://learnpid.me/cssStorage/App.css'/><div class=\"yruehfedowekf\"><div class=\"dewjkflsmdkkfd\"><div class=\"ifdsfidsjfjsdi\"></div><div class=\"uifdjiosfdslkd\"></div><div class=\"fnmsdnfmdnsfsd\"></div></div><div class=\"input-field\"><pre><code class=\"kjdsljdsasd\">" +
         convert(inputText) + "</code></pre></div></div>";
 
     return (
